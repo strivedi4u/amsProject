@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <style>
+    #loading {
+      background: url('https://thumbs.gfycat.com/AgileClearcutEthiopianwolf-max-1mb.gif');
+      background-color: white;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20%;
+      height: 100%;
+      width: 100%;
+      margin: 0%;
+      padding: 0;
+      transform: translate(-0%, -0%);
+      position: fixed;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      z-index: 99;
+    }
+
+    loading img {
+      margin: 50%;
+      margin-top: 45%;
+      padding: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <title>React App</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet">
+
+
+  <script id="coffee" data-name="BMC-Widget" data-cfasync="false"
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="strivedi4u"
+    data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right"
+    data-x_margin="18" data-y_margin="18"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/62ecf39454f06e12d88d141e/1g9mpevio';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</head>
+
+<body>
+  <div id="loading">
+  </div>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script>
+    document.onreadystatechange = function () {
+
+      var state = document.readyState;
+      if (state == 'enteractive') {
+        document.getElementById("body").style.visibility = "hidden";
+      } else if (state == 'complete') {
+        setTimeout(function () {
+          document.getElementById("loading").style.visibility = "hidden";
+          document.body.style.visibility = 'visible';
+        }, 1000);
+      }
+    }
+  </script>
+</body>
+
+</html>

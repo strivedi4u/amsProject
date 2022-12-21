@@ -1,0 +1,19 @@
+.imageLogo {
+  padding: 0px;
+  padding-left: 1px;
+  padding-top: 1px;
+  font-size: 50px;
+  width: 49px;
+  height: 49px;
+  text-align: center;
+  text-decoration: none;
+  margin: -90px 6px;
+  border-radius: 50%;
+
+}
+
+@media (max-width: 579px) {
+  .imageLogo {
+    margin: 10px 6px;
+  }
+}

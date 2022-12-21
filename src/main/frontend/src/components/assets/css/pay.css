@@ -1,0 +1,91 @@
+.card {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+@media (min-width:440px) {
+    .ok {
+        color: "yellow";
+    }
+
+    .card {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (min-width:440px) {
+    .ok {
+        color: "green";
+    }
+
+    .card {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (min-width:600px) {
+    .ok {
+        color: "blue";
+    }
+
+    .card {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (min-width:801px) {
+    .ok {
+        color: "pink";
+    }
+
+    .card {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (min-width:1025px) {
+    .ok {
+        color: "black";
+    }
+
+    .card {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (min-width:1281px) {
+    .ok {
+        color: "grey"
+    }
+
+    .card {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
