@@ -12,7 +12,7 @@ function Forgot() {
             navigate("/user");
         }
     },);
-    const URL = "http://localhost:8080";
+    const URL = "";
 
 
     function redirect() {
@@ -40,7 +40,7 @@ function Forgot() {
         e.preventDefault();
 
         if (tempEmail) {
-            fetch(URL + "/api/student/checkEmail/" + tempEmail, {
+            fetch("/api/student/checkEmail/" + tempEmail, {
                 method: "GET",
                 headers: {
                     'Content-Type': 'application/json',
@@ -60,19 +60,19 @@ function Forgot() {
                         })
                     setTempEmail2(tempEmail);
                     var data = new FormData();
-                    data.append("to", email);
+                    data.append("to", tempEmail);
                     data.append("sub", "OTP for AMS Portal Verification");
                     data.append("msg", "This is the One Time password. Please don't Share Anywhere. Your OTP is " + OTP);
-                    fetch(URL + "/api/email/", {
+                    fetch("/api/email/", {
                         method: 'POST',
                         body: data,
                     })
                         .then((res) => {
                             setOtp(OTP);
+                            swal("Good job!", "OTP is successfully Sended at Ragistered Email" + tempEmail, "success");
                             setTempEmail();
                             setButtonText("Verify OTP");
-                            swal("Good job!", "OTP is successfully Sended at Ragistered Email" + email, "success");
-                        })
+                               })
                         .catch((err) => swal("Ohh No!", "OTP is not Reached at Ragistered Email!", "error"));
                 }
                 else {
@@ -95,7 +95,7 @@ function Forgot() {
         }
 
         if (password) {
-            fetch(URL + "/api/student/", {
+            fetch("/api/student/", {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

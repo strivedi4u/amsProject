@@ -11,7 +11,7 @@ function UpdateCamera() {
             navigate("/");
         }
     },);
-    const URL = "http://localhost:8080";
+    const URL = "";
 
     const webcamRef = useRef(null);
     const [url1, setUrl1] = useState(null);
@@ -79,7 +79,7 @@ function UpdateCamera() {
             password: localStorage.getItem("password"),
         }));
 
-        fetch(URL + '/api/student/save/', {
+        fetch('/api/student/save/', {
             method: 'POST',
             body: data
         })

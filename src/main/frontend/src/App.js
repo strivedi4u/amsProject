@@ -56,7 +56,6 @@ export default function App() {
       <div className="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
         <Routes>
 
-
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/admin" element={<Admin />} />
           <Route exact path="/add" element={<Add />} />

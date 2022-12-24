@@ -14,7 +14,7 @@ function AttendStudent() {
         }
     },);
 
-    const URL = "http://localhost:8080";
+    const URL = "";
     const [data, getData] = useState([]);
     const [name, setName] = useState();
 
@@ -22,7 +22,9 @@ function AttendStudent() {
         fetchData()
     }, [])
     const fetchData = (e) => {
-        fetch(URL + '/api/attend/rollNo/' + sessionStorage.getItem("rollNo"), {
+
+
+        fetch('/api/student/email/' + sessionStorage.getItem("email"), {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',
@@ -30,18 +32,41 @@ function AttendStudent() {
             }
         }).then((res) => {
             if (res.status !== 200) {
-                swal("Unfortunatily!", "There is no Attendence", "error");
+                swal("Unfortunatily!", "There is no User", "error");
             }
             res.json()
                 .then((response) => {
-                    console.log(response);
-                    getData(response);
-                    setName(response[0].name);
+                ////////////////////////////////////////////////////////
+                fetch('/api/attend/rollNo/' + response.rollNo, {
+                    method: "GET",
+                    headers: {
+                        'Content-Type': 'application/json',
+                        "Authorization": sessionStorage.getItem('token')
+                    }
+                }).then((res) => {
+                    if (res.status !== 200) {
+                        swal("Unfortunatily!", "There is no Attendence", "error");
+                    }
+                    res.json()
+                        .then((response) => {
+                            console.log(response);
+                            getData(response);
+                            setName(response[0].name);
+                        })
+                }).catch((e) => {
+                    swal("Unfortunatily!", "There is no Attendence", "error");
+                })
+           
+                    /////////////////////////////////////////////////////
                 })
         }).catch((e) => {
-            swal("Unfortunatily!", "There is no Attendence", "error");
+            swal("Unfortunatily!", "There is no User", "error");
         })
     }
+
+
+       
+    
 
     return (
         <>
@@ -73,7 +98,7 @@ function AttendStudent() {
                                 {data.map((item, i) => (
                                     <tr key={i}>
                                         <td>{i + 1}</td>
-                                        <td>{item.date}</td>
+                                        <td>{item.id.date}</td>
                                         <td>{item.time}</td>
                                         <td>Present</td>
                                     </tr>

@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/api/attend")
 @CrossOrigin(origins = "http://localhost:3000")
@@ -48,6 +50,8 @@ public class AttendController {
     @GetMapping("/rollNo/{rollNo}")
     @PreAuthorize("hasRole('User')")
     public List<Attend> getAttendByEmail(@PathVariable("rollNo") int rollNo){
-        return attendService.getSAttendByRollNo(rollNo);
+        return attendService.getAttendByRollNo(rollNo);
     }
+
+
 }

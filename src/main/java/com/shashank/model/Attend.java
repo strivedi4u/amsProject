@@ -40,7 +40,7 @@ public class Attend {
 
     public static class CompositeKey implements Serializable {
 
-
+        @Id
         private String email;
         @JsonFormat(pattern="yyyy-MM-dd")
         private LocalDate date;

@@ -20,7 +20,7 @@ function AllPayment() {
         window.location.reload(false);
     }
 
-    var URL = "http://localhost:8080/api";
+    var URL = "/api";
     const [data, getData] = useState([])
 
     useEffect(() => {

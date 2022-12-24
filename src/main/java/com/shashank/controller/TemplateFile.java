@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TemplateFile
 {
 
-//    @RequestMapping(value={"/login", "/dashboard", "/signup", "/face" })
-//    public String HomePage() {
-//        return "";
-//    }
+    @RequestMapping(value={"/login", "/admin", "/add", "/documentation/" ,"/attend" , "/student" , "/face" , "/camera", "/user", "/profile", "/ucamera", "/signup", "/forgot" , "/student" , "/pay" , "/allpay", "/service" , "/about" , "/student" , "/contact" , "/help", "/razorpay"  })
+    public String HomePage() {
+        return "";
+    }
 }

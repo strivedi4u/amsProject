@@ -35,7 +35,7 @@ function SignUp() {
             data.append("to", email);
             data.append("sub", "OTP for AMS Portal Ragistration");
             data.append("msg", "This is the One Time password. Please don't Share Anywhere. Your OTP is " + OTP);
-            fetch('http://localhost:8080/api/email/', {
+            fetch('/api/email/', {
                 method: 'POST',
                 body: data,
             })

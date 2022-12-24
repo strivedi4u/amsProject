@@ -18,7 +18,7 @@ export default function App() {
         window.top.location.href = "/";
     }
 
-    const URL = "http://localhost:8080";
+    const URL = "";
     const Razorpay = useRazorpay();
 
     function dataURItoBlob(dataURI) {
@@ -37,7 +37,7 @@ export default function App() {
 
 
     const handlePayment = async () => {
-        const order = await axios.get(URL + "/api/pay/" + 99);
+        const order = await axios.get("/api/pay/" + 99);
         const options = {
             key: "rzp_test_qwQPH3sJfM0gVf",
             "amount": order.data.amount,
@@ -66,11 +66,11 @@ export default function App() {
                     mobile: localStorage.getItem("mobile"),
                     password: localStorage.getItem("password"),
                 }));
-                fetch(URL + '/api/student/save/', {
+                fetch('/api/student/save/', {
                     method: 'POST',
                     body: data
                 }).then((res) => {
-                    fetch(URL + '/api/payment/', {
+                    fetch('/api/payment/', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',

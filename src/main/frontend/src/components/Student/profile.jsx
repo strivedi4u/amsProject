@@ -21,13 +21,13 @@ function Profile() {
         }
     }, [loggedIn, navigate]);
 
-    const URL = "http://localhost:8080";
-    const ImageUrl = "http://localhost:8080/images/";
+    const URL = "";
+    const ImageUrl = "/images/";
     useEffect(() => {
         fetchData()
     }, [])
     const fetchData = (e) => {
-        fetch(URL + "/api/student/email/" + sessionStorage.getItem("email"), {
+        fetch("/api/student/email/" + sessionStorage.getItem("email"), {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',

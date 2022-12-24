@@ -41,7 +41,7 @@ function Navbar(props) {
                         <li><a href="/student" style={{ color: "#01c2cd" }}>Students</a></li>
                         <li><a href="/add" style={{ color: "#01c2cd" }}>Add</a></li>
                     </>}
-                    <li><a href="/docs">Documentation</a></li>
+                    <li><a href="/documentation/index.html">Documentation</a></li>
                     <li><a href="/contact">Contact Us</a></li>
                     <li><a href="/help">Help</a></li>
 

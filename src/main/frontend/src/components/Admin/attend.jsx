@@ -21,7 +21,7 @@ function AttendStudent() {
     }
 
     const [data, getData] = useState([])
-    var URL = "http://localhost:8080/api";
+    var URL = "/api";
 
     useEffect(() => {
         fetchData()

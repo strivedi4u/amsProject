@@ -9,8 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.shashank</groupId>
-	<artifactId>FYP</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>ams</artifactId>
+	<version>0.0.1</version>
+	<packaging>war</packaging>
 	<name>FYP</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -20,8 +21,14 @@
 		<frontend-src-dir>${project.basedir}/src/main/frontend</frontend-src-dir>
 		<node.version>v18.9.0</node.version>
 		<frontend-maven-plugin.version>1.7.6</frontend-maven-plugin.version>
+
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>

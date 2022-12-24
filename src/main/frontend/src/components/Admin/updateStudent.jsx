@@ -13,7 +13,7 @@ function UpdateStudent(props) {
   var [address, setAddress] = useState(props.address);
   var [password, setPassword] = useState();
 
-  var URL = "http://localhost:8080/api";
+  var URL = "/api";
 
 
   let handleSubmit = async (e) => {

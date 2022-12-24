@@ -14,9 +14,9 @@ function Welcome() {
                   <h6>Welcome to AMS Portal</h6>
                   <h2>We mark the <em>Attendence</em> using the <span>Face Recognization</span> </h2>
                   <p>This is the High Quality Application is Developed for Attendence marking online using the Face Recognization. </p>
-                  <form id="search" action="#" method="GET">
+                  <form id="search" action="/signup" method="GET">
                     <fieldset>
-                      <input type="address" defaultValue={"http://localhost:3000/"} className="email" placeholder="Your website URL..." required />
+                      <input type="address" defaultValue={"amsproject.azurewebsites.net"} className="email" placeholder="Your website URL..." required />
                       <fieldset>
                         <button type="submit" className="main-button">Ragister Now</button>
                       </fieldset>

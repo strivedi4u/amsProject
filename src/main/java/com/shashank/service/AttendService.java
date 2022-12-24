@@ -9,6 +9,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static com.shashank.model.Attend.counter;
 
@@ -16,6 +17,7 @@ import static com.shashank.model.Attend.counter;
 public class AttendService {
     @Autowired
     private AttendRepository attendRepo;
+
     public List<Attend> getAllAttend() {
         List<Attend> attends = new ArrayList<Attend>();
         attendRepo.findAll().forEach(stu -> attends.add(stu));
@@ -46,7 +48,9 @@ public class AttendService {
         attendRepo.findAll();
         return attend;
     }
-    public List<Attend> getSAttendByRollNo(int rollNo){
+    public List<Attend> getAttendByRollNo(int rollNo){
         return attendRepo.findByRollNo(rollNo);
     }
+
+
 }

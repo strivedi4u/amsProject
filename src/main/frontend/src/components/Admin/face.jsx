@@ -15,8 +15,8 @@ function Face() {
     }, []);
 
     const [data, getData] = useState([]);
-    var URL = "http://localhost:8080/api";
-    var URL_IMAGE = "http://localhost:8080/images/";
+    var URL = "/api";
+    var URL_IMAGE = "/images/";
 
     useEffect(() => {
         fetchData()

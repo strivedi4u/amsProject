@@ -6,10 +6,10 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin()
 public class ImageConfig implements WebMvcConfigurer {
     @Override
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin
     public void addResourceHandlers(final ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/images/**").addResourceLocations("file:images/");
     }

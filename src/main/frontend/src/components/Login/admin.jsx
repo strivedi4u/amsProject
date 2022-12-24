@@ -13,7 +13,7 @@ function Admin() {
             navigate("/student");
         }
     },);
-    const URL = "http://localhost:8080";
+    const URL = "";
 
 
     const [email, setEmail] = useState("");
@@ -21,7 +21,7 @@ function Admin() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch(URL + "/api/admin/login/", {
+        const response = await fetch("/api/admin/login/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
