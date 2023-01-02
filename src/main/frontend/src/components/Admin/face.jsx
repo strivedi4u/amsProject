@@ -157,7 +157,7 @@ function Face() {
             </div>
             <br></br>
             <button id="message" onClick={handleClick} className="info btn btn-info" style={{ width: 350, backgroundColor: "blue" }} role="alert">
-                Click For Start the Face Recognization
+                Click For Start the Face Recognition
             </button>
         </center></>
 

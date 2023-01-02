@@ -16,7 +16,7 @@ function Service() {
                                                 <h6>01</h6>
                                             </div>
                                             <div className="icon"></div>
-                                            <h4>Face Recognization</h4>
+                                            <h4>Face Recognition</h4>
                                             <div className="line-dec"></div>
                                             <p>AMS Portal provide the service to indentify the Correct Users.</p>
                                         </div>

@@ -12,7 +12,7 @@ function Welcome() {
               <div className="col-lg-6 align-self-center">
                 <div className="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                   <h6>Welcome to AMS Portal</h6>
-                  <h2>We mark the <em>Attendence</em> using the <span>Face Recognization</span> </h2>
+                  <h2>We mark the <em>Attendence</em> using the <span>Face Recognition</span> </h2>
                   <p>This is the High Quality Application is Developed for Attendence marking online using the Face Recognization. </p>
                   <form id="search" action="/signup" method="GET">
                     <fieldset>

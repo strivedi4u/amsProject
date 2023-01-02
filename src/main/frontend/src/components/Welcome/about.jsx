@@ -17,7 +17,7 @@ function About() {
                             <div className="section-heading">
                                 <h2>Developer of the <em>AMS</em> Portal  <span>Project</span> </h2>
                                 <p>I'm Shashank Trivedi and I'm a Programming Enthusiast. Programming always fascinates me . I am working in this field for almost 2 years .and have earned a lot of experience . Currently I am Seeking a challenging position in a reputed organization .where I can learn new skills, expand my knowledge, and leverage my learnings. To get an opportunity where I can make the best of my potential and contribute to the organization's growth..⚡
-                                    <br></br>It is a AMS Portal application develop for the marking the attendance online using the face recognization. It provides the high Quality Security & Fast Reliable because the Java & ReactJS used in the Project.</p>
+                                    <br></br>It is a AMS Portal application develop for the marking the attendance online using the face recognition. It provides the high Quality Security & Fast Reliable because the Java & ReactJS used in the Project.</p>
                             </div>
                             <center>
                                 <a href="https://www.linkedin.com/in/strivedi4u/" ><img className="imageLogo" src="https://trivedi2u.github.io/portfolio/images/logo/linkedin.png" alt="LinkedIn" /></a>
