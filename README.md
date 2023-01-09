@@ -4,7 +4,7 @@
 
 # Attendance Management System using Face Recognition (AMS PORTAL)
 
-Developed By - [@Shashank Trivedi](https://www.github.com/trivedi2u)
+Developed By - [@Shashank Trivedi](https://www.github.com/strivedi4u)
 
 
 
