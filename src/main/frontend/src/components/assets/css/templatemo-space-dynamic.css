@@ -303,6 +303,12 @@ Banner Style
   height: 467px;
 }
 
+@media screen and (max-width: 630px) {
+  .main-banner:after {
+      width: 0;
+      height: 0;
+  }
+}
 .main-banner:before {
   content: '';
   background-image: url(../images/baner-dec-right.png);

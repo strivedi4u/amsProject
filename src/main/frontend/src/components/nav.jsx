@@ -44,6 +44,7 @@ function Navbar(props) {
                     <li><a href="/documentation/index.html">Documentation</a></li>
                     <li><a href="/contact">Contact Us</a></li>
                     <li><a href="/help">Help</a></li>
+                    <li><a href="/report">Project Report</a></li>
 
                 </ul>
                 <form className="navbar-form form-inline navbar-right ml-auto">

@@ -46,7 +46,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .frameOptions().disable();
 
         httpSecurity.csrf().disable()
-                .authorizeRequests().antMatchers("/api/student/image/**","/**", "/documentation/" ,"/assets/images/", "/assets/images/**","/models/", "/models/**","/razorpay","/login","/admin","/add","/attend",
+                .authorizeRequests().antMatchers("/api/student/image/**","/**", "/report", "/documentation/" ,"/assets/images/", "/assets/images/**","/models/", "/models/**","/razorpay","/login","/admin","/add","/attend",
                         "/student","/face","/camera","/user","/profile","/ucamera","/signup",
                         "/forgot","/pay","/allpay","/service","*" ,"/about", "/contact","/camera"
                         ,"/help","/api/attend/delete/", "/api/student/" , "/authenticate", "/api/pay/{amount}"

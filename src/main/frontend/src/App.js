@@ -24,6 +24,7 @@ import About from "./components/Welcome/about";
 import Contact from "./components/Welcome/contact";
 import Footer from "./components/Welcome/foot";
 import Help from "./components/Welcome/help";
+import Report from "./components/Welcome/report";
 
 
 import NavBar from "./components/nav";
@@ -77,6 +78,7 @@ export default function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/help" element={<Help />} />
+          <Route exact path="/report" element={<Report />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
 

@@ -134,7 +134,7 @@ function Forgot() {
                 <h2 className="text-center"><b>Forgot Password</b></h2>
                 <form>
                     <div className="avatar" style={{ backgroundColor: "transparent" }}>
-                        <img style={{ borderRadius: 48 + "%" }} src="https://media.licdn.com/dms/image/C4D03AQFyYxMRyN6sCg/profile-displayphoto-shrink_800_800/0/1650693412161?e=1676505600&v=beta&t=yoxrR25MopyhX7f_jkOKDwUrnJGRAFIXY4Flr1u74ek" alt="Avatar" />
+                        <img style={{ borderRadius: 48 + "%" }} src="https://strivedi4u.github.io/portfolio/images/my.jpg" alt="Avatar" />
                     </div>
                     <div className="form-group">
                         <input type="email" onChange={e => setTempEmail(e.target.value)} className="form-control input-lg" placeholder="Email" />
