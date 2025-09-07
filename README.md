@@ -12,9 +12,15 @@ Developed By - [@Shashank Trivedi](https://www.github.com/strivedi4u)
 
 [http://amsproject.azurewebsites.net/](http://amsproject.azurewebsites.net/)
 
-## 📝 Project Report
+---
 
-[AMS Project Report (GitHub)](https://github.com/trivedi2u/amsProject)
+## 📑 Project Report
+
+> 📄 **View the complete Project Report below:**  
+>
+> <iframe src="https://github.com/strivedi4u/amsProject/raw/master/ProjectReport.pdf" width="100%" height="600px"></iframe>
+>
+> [🔗 Direct Download](https://github.com/strivedi4u/amsProject/raw/master/ProjectReport.pdf)
 
 ---
 
@@ -135,7 +141,7 @@ amsProject/
 ## 🔗 Useful Links
 
 - [Live Portal](http://amsproject.azurewebsites.net/)
-- [Project Report](https://github.com/trivedi2u/amsProject)
+- [Project Report (Direct PDF)](https://github.com/strivedi4u/amsProject/raw/master/ProjectReport.pdf)
 - [Developer Portfolio](https://trivedi2u.github.io/portfolio/)
 
 ---
