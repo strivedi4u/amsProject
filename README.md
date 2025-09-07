@@ -12,17 +12,7 @@ Developed By - [@Shashank Trivedi](https://www.github.com/strivedi4u)
 
 [http://amsproject.azurewebsites.net/](http://amsproject.azurewebsites.net/)
 
----
 
-## 📑 Project Report
-
-> 📄 **View the complete Project Report below:**  
->
-> <iframe src="https://github.com/strivedi4u/amsProject/raw/master/ProjectReport.pdf" width="100%" height="600px"></iframe>
->
-> [🔗 Direct Download](https://github.com/strivedi4u/amsProject/raw/master/ProjectReport.pdf)
-
----
 
 ## 📖 About
 
